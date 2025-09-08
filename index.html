@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopLite - e-commerce website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+<body>
+    <!-- Navbar Section -->
+     <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">ShopLite</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Deals</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="products/men.html">Men</a></li>
+            <li><a class="dropdown-item" href="products/women.html">Women</a></li>
+            <li><a class="dropdown-item" href="products/electronics.html">Electronics</a></li>
+            <li><a class="dropdown-item" href="products/groceries.html">Groceries</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success text-light" type="submit">Search</button>
+      </form>
+
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="login.html"><i class="fas fa-user"></i> Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active position-relative" href="cart.html">
+            <i class="fas fa-shopping-cart"></i> Cart
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              0
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+    </nav>
+
+
+        <!-- Hero Section -->
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/images/mens-shoes1.jpg" class="d-block w-100" alt="...">
+      <div class="product-info">
+    Limited Stock! Order now before it's gone.
+      </div>
+      <a href="#" class="buy-now-btn">Buy Now</a>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/headphone.jpg" class="d-block w-100" alt="...">
+      <div class="product-info">
+    Limited Stock! Order now before it's gone.
+      </div>
+      <a href="#" class="buy-now-btn">Buy Now</a>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/handbag1.jpg" class="d-block w-100" alt="...">
+      
+      <div class="product-info">
+    Limited Stock! Order now before it's gone.
+      </div>
+      
+      <a href="#" class="buy-now-btn">Buy Now</a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+        <!-- Products Section -->
+
+<div class="container text-center my-5">
+  <h1 class="text-center mb-4">Popular Products</h1>
+  <div class="row">
+    <!-- product 1 : smartwatch1 -->
+     <div class="col-lg-4 col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="assets/images/smartwatch1.jpg" class="card-img-top" alt="smartwatch1">
+        <div class="card-body">
+          <h5 class="card-title">Smartwatch</h5>
+          <p class="card-text">Stay connected, stay active, and stay stylish with Smartwatch. Designed for modern lifestyles, this sleek wearable offers everything you need—right on your wrist.</p>
+          <p class="product-price">৳3,500</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+     </div>
+
+     <!-- product 2 : mens-shoes1 -->
+      <div class="col-lg-4 col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="assets/images/mens-shoes1.jpg" class="card-img-top" alt="mens-shoes1">
+        <div class="card-body">
+          <h5 class="card-title">Men's Shoe</h5>
+          <p class="card-text">Men’s shoes offer comfort, durability, and style—perfect for daily wear, formal occasions, or sports. Designed to support movement while enhancing your overall look effortlessly.</p>
+          <p class="product-price">৳3,500</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+     </div>
+
+     <!-- product 3 : handbag1 -->
+      <div class="col-lg-4 col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="assets/images/handbag1.jpg" class="card-img-top" alt="handbag1">
+        <div class="card-body">
+          <h5 class="card-title">Handbag</h5>
+          <p class="card-text">This elegant female handbag offers spacious compartments, durable design, and stylish appeal—perfect for daily use, travel, or events. A blend of fashion and functionality.</p>
+          <p class="product-price">৳3,500</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+     </div>
+
+     <!-- product 4 : headphone -->
+      <div class="col-lg-4 col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="assets/images/headphone.jpg" class="card-img-top" alt="headphone">
+        <div class="card-body">
+          <h5 class="card-title">Headphone</h5>
+          <p class="card-text">Headphones deliver immersive sound, noise isolation, and wireless convenience. Ideal for music, calls, and gaming—experience audio clarity and comfort wherever you go.</p>
+          <p class="product-price">৳3,500</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+     </div>
+
+     <!-- product 5 : handbag2 -->
+      <div class="col-lg-4 col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="assets/images/handbag2.jpg" class="card-img-top" alt="handbag2">
+        <div class="card-body">
+          <h5 class="card-title">Handbag</h5>
+          <p class="card-text">This elegant female handbag offers spacious compartments, durable design, and stylish appeal—perfect for daily use, travel, or events. A blend of fashion and functionality.</p>
+          <p class="product-price">৳3,500</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+     </div>
+
+     <!-- product 6 : t-shirt1 -->
+      <div class="col-lg-4 col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="assets/images/tshirt1.jpg" class="card-img-top" alt="tshirt1">
+        <div class="card-body">
+          <h5 class="card-title">T-shirt</h5>
+          <p class="card-text">T-shirts offer breathable comfort, casual style, and versatile wear. Ideal for everyday use, layering, or branding—soft, durable, and easy to pair with anything.</p>
+          <p class="product-price">৳3,500</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+     </div>
+
+     <!-- product 7 : smartwatch2 -->
+      <div class="col-lg-4 col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="assets/images/smartwatch2.jpg" class="card-img-top" alt="smartwatch2">
+        <div class="card-body">
+          <h5 class="card-title">Smartwatch</h5>
+          <p class="card-text">Stay connected, stay active, and stay stylish with Smartwatch. Designed for modern lifestyles, this sleek wearable offers everything you need—right on your wrist.</p>
+          <p class="product-price">৳3,500</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+     </div>
+
+     <!-- product 8 : mens-shoe 2 -->
+      <div class="col-lg-4 col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="assets/images/mens-shoes2.jpg" class="card-img-top" alt="mens-shoes2">
+        <div class="card-body">
+          <h5 class="card-title">Men's Shoe</h5>
+          <p class="card-text">Men’s shoes offer comfort, durability, and style—perfect for daily wear, formal occasions, or sports. Designed to support movement while enhancing your overall look effortlessly.</p>
+          <p class="product-price">৳3,500</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+     </div>
+
+     <!-- product 9 : tshirt2 -->
+      <div class="col-lg-4 col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="assets/images/tshirt2.jpg" class="card-img-top" alt="tshirt2">
+        <div class="card-body">
+          <h5 class="card-title">T-shirt</h5>
+          <p class="card-text">T-shirts offer breathable comfort, casual style, and versatile wear. Ideal for everyday use, layering, or branding—soft, durable, and easy to pair with anything.</p>
+          <p class="product-price">৳3,500</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+     </div>
+
+     <!-- product 10 : headphone1 -->
+      <div class="col-lg-4 col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="assets/images/headphone1.jpg" class="card-img-top" alt="headphone1">
+        <div class="card-body">
+          <h5 class="card-title">Headphone</h5>
+          <p class="card-text">Headphones deliver immersive sound, noise isolation, and wireless convenience. Ideal for music, calls, and gaming—experience audio clarity and comfort wherever you go.</p>
+          <p class="product-price">৳3,500</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+     </div>
+
+     <!-- product 11 : fruit1 -->
+      <div class="col-lg-4 col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="assets/images/fruit1.jpg" class="card-img-top" alt="fruit1">
+        <div class="card-body">
+          <h5 class="card-title">Pineapple</h5>
+          <p class="card-text">Pineapple is a juicy, tropical fruit rich in vitamins and antioxidants. Its sweet-tart flavor makes it ideal for snacking, cooking, juicing, or desserts.</p>
+          <p class="product-price">৳3,500</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+     </div>
+
+     <!-- product 12 : fruit2 -->
+      <div class="col-lg-4 col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="assets/images/fruit2.jpg" class="card-img-top" alt="fruit2">
+        <div class="card-body">
+          <h5 class="card-title">Apple</h5>
+          <p class="card-text">Apples are sweet, crunchy fruits rich in fiber and antioxidants. Ideal for snacking, baking, or juicing—delicious and nutritious in every bite.</p>
+          <p class="product-price">৳3,500</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+     </div>
+
+     <!-- product 13 : eggs -->
+      <div class="col-lg-4 col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="assets/images/eggs.jpg" class="card-img-top" alt="eggs">
+        <div class="card-body">
+          <h5 class="card-title">Eggs</h5>
+          <p class="card-text">Eggs are a versatile, protein-rich food used in cooking and baking. They offer essential nutrients, bind ingredients, and enhance flavor in countless delicious recipes.</p>
+          <p class="product-price">৳3,500</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+     </div>
+
+  </div>
+</div>
+
+
+
+        <!-- footer section -->
+
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-md-left">
+      <div class="row">
+        <!-- company info -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+          <h5 class="text-uppercase fw-bold">ShopLite</h5>
+          <p>Your one-stop shop for fashion, tech, and lifestyle products. Quality guaranteed, delivered with care.</p>
+        </div>
+        <!-- quick links -->
+         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a class="text-white text-decoration-none" href="#">Home</a></li>
+            <li><a class="text-white text-decoration-none" href="#">Deals</a></li>
+            <li><a class="text-white text-decoration-none" href="#">SignUp</a></li>
+            <li><a class="text-white text-decoration-none" href="#">Contact</a></li>
+          </ul>
+         </div>
+         <!-- Customer Service -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">Customer Services</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Shipping</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Returns</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <!-- Contact Info -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <h6 class="text-uppercase fw-bold">Contact</h6>
+        <p><i class="bi bi-house-door-fill me-2"></i> Sylhet, Bangladesh</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> support@example.com</p>
+        <p><i class="bi bi-phone-fill me-2"></i> +880 1234 567890</p>
+      </div>
+
+      </div>
+
+       <!-- Social Media -->
+    <div class="row mt-4">
+      <div class="col text-center">
+        <a href="#" class="text-white me-4"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-4"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white me-4"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-white me-4"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+
+       <!-- Copyright -->
+    <div class="row mt-3">
+      <div class="col text-center">
+        <p class="mb-0">Developed with ❤ by <a href="https://github.com/mahdihasan47">Mahdi Hasan</a></p>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+   <!-- Script -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
